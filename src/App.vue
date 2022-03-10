@@ -2,16 +2,19 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
+    <dci-button></dci-button>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import KangButton from "./components/KangButton/KangButton.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+    KangButton,
   },
 };
 </script>

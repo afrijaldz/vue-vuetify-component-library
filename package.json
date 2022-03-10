@@ -1,20 +1,42 @@
 {
-  "name": "coba-dua-dua-js",
+  "name": "vuet-lib",
+  "author": {
+    "name": "Afrijal Dzuhri (ijul)",
+    "email": "ijuldz@gmail.com"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "webpack:build": "vue-cli-service build --target lib --name vuet-lib src/index.js",
+    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
+  "main": "dist/vuet-lib.common.js",
+  "unpkg": "dist/vuet-lib.umd.min.js",
+  "cdn": "dist/vuet-lib.umd.min.js",
+  "browser": "dist/vuet-lib.umd.min.js",
+  "files": [
+    "src/components",
+    "src/styles",
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "vuetify": "^2.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/vue": "^6.0.26",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-unit-jest": "~5.0.0",
@@ -30,6 +52,9 @@
     "prettier": "^2.4.1",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
-    "vue-template-compiler": "^2.6.14"
+    "vue-cli-plugin-storybook": "~2.1.0",
+    "vue-cli-plugin-vuetify": "~2.4.7",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify-loader": "^1.7.0"
   }
 }
