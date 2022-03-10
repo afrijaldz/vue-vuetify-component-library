@@ -1,29 +1,40 @@
-# coba-dua-dua-js
+# vuet-lib
 
 ## Project setup
+
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Build for library
+
 ```
-yarn serve
+yarn webpack:build
 ```
 
-### Compiles and minifies for production
+### Link to local
+
 ```
-yarn build
+yarn link
 ```
 
-### Run your unit tests
+### Install in difference project
+
 ```
-yarn test:unit
+yarn link vuet-lib
 ```
 
-### Lints and fixes files
+### CSS Location
+
 ```
-yarn lint
+vuet-lib/dist/vuet-lib.css
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Component Location
+
+The components are located in src/components folder
+
+## Todo
+
+- add storybook
+- add unit test (jest)
